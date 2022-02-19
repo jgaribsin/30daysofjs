@@ -1,0 +1,1 @@
+Documenting my journey with the 30DaysOfJavaScript found here: https://github.com/Asabeneh/30-Days-Of-JavaScript
