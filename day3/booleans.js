@@ -88,3 +88,45 @@ console.log('milk'.length == 'meat'.length)     // true
 console.log('milk'.length != 'meat'.length)     // false
 console.log('tomato'.length == 'potato'.length) // true
 console.log('python'.length > 'dragon'.length)  // false
+
+// window methods
+/*
+alert('Welcome to 30DaysOfJavaScript')
+
+let number = prompt('Enter number', 'number goes here')
+console.log(number)
+
+const agree = confirm('Are you sure you like to delete? ')
+console.log(agree) // results true or false
+*/
+
+// messing with dates
+let now = new Date()
+console.log(now)
+
+console.log(now.getMonth()) // 1: 2nd month of 0-11
+
+console.log(now.getDate()) // 21st of feb
+
+console.log(now.getDay()) // 1: it's monday
+
+console.log(now.getHours()) // 3: it's 3am
+
+console.log(now.getSeconds()) // 43 at time of compiling
+
+console.log(now.getTime()) // 1645438172535 this is the number of seconds from jan1, 1970
+
+const allSeconds = Date.now()
+console.log(allSeconds) // 1645438211723
+
+const timeInSeconds = new Date().getTime()
+console.log(allSeconds == timeInSeconds) // true
+
+now = new Date()
+const year = now.getFullYear(),
+month = now.getMonth(),
+date = now.getDate(),
+hours = now.getHours(),
+minutes = now.getMinutes()
+
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 21/1/2022 3:13 
